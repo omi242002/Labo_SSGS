@@ -1,0 +1,8 @@
+{
+  "name": "password-strength-toolkit",
+  "version": "1.0.0",
+  "description": "Un tool CLI per analizzare la robustezza di una password.",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC"
+}
