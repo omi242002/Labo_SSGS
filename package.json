@@ -1,8 +1,47 @@
 {
   "name": "password-strength-toolkit",
   "version": "1.0.0",
-  "description": "Un tool CLI per analizzare la robustezza di una password.",
+  "description": "Tool CLI per analizzare e generare password sicure",
   "main": "index.js",
-  "author": "",
-  "license": "ISC"
+  "bin": {
+    "password-toolkit": "./index.js"
+  },
+  "scripts": {
+    "start": "node ./index.js",
+    "cli": "node ./index.js",
+    "test": "jest --coverage",
+    "coverage": "jest --coverage --coverageReporters=text-summary",
+    "lint": "eslint . --ext .js || true",
+    "prepare": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/omi242002/Labo_SSGS/tree/fix/initial-setup/src"
+  },
+  "keywords": [
+    "password",
+    "security",
+    "cli",
+    "validator",
+    "generator"
+  ],
+  "author": "omi",
+  "license": "ISC",
+  "engines": {
+    "node": ">=14"
+  },
+  "files": [
+    "index.js",
+    "src/"
+  ],
+  "devDependencies": {
+    "jest": "^29.6.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
+    "coverageDirectory": "coverage"
+  }
 }

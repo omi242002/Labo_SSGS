@@ -1,0 +1,41 @@
+# Node modules
+node_modules/
+
+# Coverage and test reports
+coverage/
+coverage-final.json
+.nyc_output/
+
+# Environment files
+.env
+.env.*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE / editor
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Build / artifacts
+dist/
+build/
+*.tgz
+
+# Lockfiles (optional: keep if you want reproducible installs)
+# package-lock.json
+# yarn.lock
+
+# Misc
+.vs/
+.snyk
