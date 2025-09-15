@@ -4,5 +4,13 @@
   "description": "Un tool CLI per analizzare la robustezza di una password.",
   "main": "index.js",
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "type": "commonjs",
+  "scripts": {
+    "test": "jest --coverage",
+    "coverage": "jest --coverage --coverageReporters=text-summary,html"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
 }
