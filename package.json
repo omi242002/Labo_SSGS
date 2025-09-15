@@ -1,16 +1,60 @@
 {
   "name": "password-strength-toolkit",
   "version": "1.0.0",
-  "description": "Un tool CLI per analizzare la robustezza di una password.",
+  "description": "Tool CLI per analizzare e generare password sicure",
   "main": "index.js",
-  "author": "",
-  "license": "ISC",
   "type": "commonjs",
-  "scripts": {
-    "test": "jest --coverage",
-    "coverage": "jest --coverage --coverageReporters=text-summary,html"
+  "bin": {
+    "password-toolkit": "./index.js"
   },
+  "scripts": {
+    "start": "node ./index.js",
+    "cli": "node ./index.js",
+    "test": "jest --coverage",
+    "coverage": "jest --coverage --coverageReporters=text-summary,html",
+    "lint": "eslint . --ext .js || true",
+    "prepare": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/omi242002/Labo_SSGS"
+  },
+  "keywords": [
+    "password",
+    "security",
+    "cli",
+    "validator",
+    "generator"
+  ],
+  "author": "omi",
+  "license": "ISC",
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "index.js",
+    "src/"
+  ],
   "devDependencies": {
     "jest": "^29.7.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
+    "coverageDirectory": "coverage",
+    "coverageReporters": [
+      "text-summary",
+      "html"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "statements": 100,
+        "branches": 100,
+        "functions": 100,
+        "lines": 100
+      }
+    }
   }
 }
